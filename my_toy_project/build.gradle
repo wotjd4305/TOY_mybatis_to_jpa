@@ -20,9 +20,15 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	compile('com.h2database:h2')
+
+
+	//DB
+	compile group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'
 
 
 	compileOnly 'org.projectlombok:lombok'
