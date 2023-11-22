@@ -1,0 +1,39 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+= Spring REST Docs
+:toc: left
+:toclevels: 1
+:sectlinks:
+
+[[resources-post]]
+== 마커 상세 조회
+
+==== Request Sample
+include::{snippets}/marker-get/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/marker-get/path-parameters.adoc[]
+
+==== Response Sample
+include::{snippets}/marker-get/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/marker-get/response-fields.adoc[]
+
+[[resources-post]]
+== 마커 업데이트
+
+==== Request Sample
+include::{snippets}/marker-update/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/marker-get/path-parameters.adoc[]
+
+==== Response Sample
+include::{snippets}/marker-update/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/marker-update/response-fields.adoc[]
+

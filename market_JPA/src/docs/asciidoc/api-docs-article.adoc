@@ -1,0 +1,23 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+= Spring REST Docs
+:toc: left
+:toclevels: 1
+:sectlinks:
+
+[[resources-post]]
+== 게시글 상세 조회
+
+==== Request Sample
+include::{snippets}/article-get/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/article-get/path-parameters.adoc[]
+
+==== Response Sample
+include::{snippets}/article-get/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/article-get/response-fields.adoc[]

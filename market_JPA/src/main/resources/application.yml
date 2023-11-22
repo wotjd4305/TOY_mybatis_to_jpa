@@ -1,0 +1,53 @@
+server:
+    port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+file:
+  basePath: /Users
+---
+
+spring:
+  profiles: js_dev
+  datasource:
+    #url: jdbc:h2:tcp://localhost/~/gonggu;MODE=PostgreSQL
+    url: jdbc:postgresql://localhost:5432/postgres
+    #username: sa
+    username: ENC(8Bh9b1U9TDHHmbds+i0zC7Bk8hWSWfr7)
+    password: ENC(68jaciC0aL4WGFquVJwoTg==)
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      #ddl-auto: create-drop: 시작 시 생성 후 종료 시 제거
+    properties:
+      hibernate:
+        #        show_sql: true #sysout?? ????
+        format_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+  thymeleaf:
+    prefix: classpath:/templates/
+
+  mvc:
+    view:
+      suffix: .html
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+
+file:
+  basePath: /Users/wotjd4305/Desktop/dev
+

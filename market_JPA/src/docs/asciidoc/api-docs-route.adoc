@@ -1,0 +1,54 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+= Spring REST Docs
+:toc: left
+:toclevels: 1
+:sectlinks:
+
+[[resources-post]]
+== 경로 생성
+
+==== Request Sample
+include::{snippets}/route-save/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/route-save/request-fields.adoc[]
+
+==== Response Sample
+include::{snippets}/route-save/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/route-save/response-fields.adoc[]
+
+
+[[resources-get]]
+== 경로 조회
+
+==== Request Sample
+include::{snippets}/route-get/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/route-get/path-parameters.adoc[]
+
+==== Response Sample
+include::{snippets}/route-get/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/route-get/response-fields.adoc[]
+
+[[resources-delete]]
+== 경로 삭제
+
+==== Request Sample
+include::{snippets}/route-delete/http-request.adoc[]
+
+==== Request Field
+include::{snippets}/route-delete/path-parameters.adoc[]
+
+==== Response Sample
+include::{snippets}/route-delete/http-response.adoc[]
+
+==== Response Fields
+include::{snippets}/route-delete/response-fields.adoc[]

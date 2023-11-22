@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:54321/postgres
+    username: postgres
+    password: 1q2w3e4r
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      #ddl-auto: create-drop: 시작 시 생성 후 종료 시 제거
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+  thymeleaf:
+    prefix: classpath:/templates/
+
+  mvc:
+    view:
+      suffix: .html
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+
